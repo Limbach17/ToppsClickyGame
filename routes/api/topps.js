@@ -1,8 +1,8 @@
 const router = require("express").Router();
-const booksController = require("../../controllers/toppsController");
+const toppsController = require("../../controllers/toppsController");
 
 router.route("/")
-  .get(booksController.findAll)
+  .get(toppsController.findAll)
   
 router
   .route("/:id")
